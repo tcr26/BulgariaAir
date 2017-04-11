@@ -12,21 +12,17 @@ namespace Specflow
         [BeforeScenario]
         public static void BeforeScenario()
         {
-
-            //TODO: implement logic that has to run before executing each scenario
         }
 
         [BeforeTestRun]
         public static void BeforeTestRun()
         {
-            //remove static from property to run all the single browser instance
             Driver = new FirefoxDriver();
         }
 
         [AfterScenario]
         public static void AfterScenario()
         {
-            //TODO: implement logic that has to run after executing each scenario
         }
 
         [AfterTestRun]

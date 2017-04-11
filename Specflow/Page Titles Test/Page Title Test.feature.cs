@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Specflow
+namespace Specflow.PageTitlesTest
 {
     using TechTalk.SpecFlow;
     
@@ -23,7 +23,7 @@ namespace Specflow
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "SpecFlowFeature.feature"
+#line 1 "Page Title Test.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
@@ -47,7 +47,7 @@ namespace Specflow
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "GoToPage")))
             {
-                Specflow.GoToPageFeature.FeatureSetup(null);
+                Specflow.PageTitlesTest.GoToPageFeature.FeatureSetup(null);
             }
         }
         

@@ -66,21 +66,22 @@
   <ItemGroup>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Specflow.GoToAbvBgSteps.cs" />
-    <Compile Include="SpecFlowFeature.feature.cs">
+    <Compile Include="Page Titles Test\Page Title Test.steps.cs" />
+    <Compile Include="Page Titles Test\Page Title Test.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SpecFlowFeature.feature</DependentUpon>
+      <DependentUpon>Page Title Test.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SpecFlowFeature.feature">
+    <None Include="Page Titles Test\Page Title Test.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>SpecFlowFeature.feature.cs</LastGenOutput>
+      <LastGenOutput>Page Title Test.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
