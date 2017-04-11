@@ -5,14 +5,14 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Firefox;
 
-namespace Specflow
+namespace Specflow.PageTitleTest
 {
     [Binding]
-    public class GoToPage
+    public class PageTitleTest
     {
         private static WebDriverWait Waiter { get; set; }
 
-        public GoToPage()
+        public PageTitleTest()
         {
             Waiter = new WebDriverWait(Hooks.Driver, TimeSpan.FromSeconds(20));
         }

@@ -66,8 +66,8 @@
   <ItemGroup>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Page Titles Test\Page Title Test.steps.cs" />
-    <Compile Include="Page Titles Test\Page Title Test.feature.cs">
+    <Compile Include="Page Title Test\Page Title Test.steps.cs" />
+    <Compile Include="Page Title Test\Page Title Test.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Page Title Test.feature</DependentUpon>
@@ -76,7 +76,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Page Titles Test\Page Title Test.feature">
+    <None Include="Page Title Test\Page Title Test.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Page Title Test.feature.cs</LastGenOutput>
     </None>

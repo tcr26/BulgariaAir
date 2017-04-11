@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Specflow.PageTitlesTest
+namespace Specflow.PageTitleTest
 {
     using TechTalk.SpecFlow;
     
@@ -18,7 +18,7 @@ namespace Specflow.PageTitlesTest
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class GoToPageFeature
+    public partial class PageTitlesTestsFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -30,7 +30,7 @@ namespace Specflow.PageTitlesTest
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GoToPage", "I go to Page\r\nI check for site title to match the expected one", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Page Titles Tests", "I go to Page\r\nI check for site title to match the expected one", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -45,9 +45,9 @@ namespace Specflow.PageTitlesTest
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "GoToPage")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Page Titles Tests")))
             {
-                Specflow.PageTitlesTest.GoToPageFeature.FeatureSetup(null);
+                Specflow.PageTitleTest.PageTitlesTestsFeature.FeatureSetup(null);
             }
         }
         
@@ -67,9 +67,9 @@ namespace Specflow.PageTitlesTest
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void GoToPage(string pageURL, string pageTitle, string[] exampleTags)
+        public virtual void CheckPageTitles(string pageURL, string pageTitle, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("GoToPage", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Page Titles", exampleTags);
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -81,38 +81,38 @@ testRunner.Then(string.Format("Check for {0}", pageTitle), ((string)(null)), ((T
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("GoToPage: \"https://www.abv.bg/\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "GoToPage")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Titles: \"https://www.abv.bg/\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Page Titles Tests")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"https://www.abv.bg/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageURL", "\"https://www.abv.bg/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageTitle", "\"АБВ Поща\"")]
-        public virtual void GoToPage_HttpsWww_Abv_Bg()
+        public virtual void CheckPageTitles_HttpsWww_Abv_Bg()
         {
-            this.GoToPage("\"https://www.abv.bg/\"", "\"АБВ Поща\"", ((string[])(null)));
+            this.CheckPageTitles("\"https://www.abv.bg/\"", "\"АБВ Поща\"", ((string[])(null)));
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("GoToPage: \"https://www.google.bg/?gws_rd=ssl\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "GoToPage")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Titles: \"https://www.google.bg/?gws_rd=ssl\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Page Titles Tests")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"https://www.google.bg/?gws_rd=ssl\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageURL", "\"https://www.google.bg/?gws_rd=ssl\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageTitle", "\"Google\"")]
-        public virtual void GoToPage_HttpsWww_Google_BgGws_RdSsl()
+        public virtual void CheckPageTitles_HttpsWww_Google_BgGws_RdSsl()
         {
-            this.GoToPage("\"https://www.google.bg/?gws_rd=ssl\"", "\"Google\"", ((string[])(null)));
+            this.CheckPageTitles("\"https://www.google.bg/?gws_rd=ssl\"", "\"Google\"", ((string[])(null)));
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("GoToPage: \"http://www.bing.com/\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "GoToPage")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Titles: \"http://www.bing.com/\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Page Titles Tests")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"http://www.bing.com/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageURL", "\"http://www.bing.com/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageTitle", "\"Bing\"")]
-        public virtual void GoToPage_HttpWww_Bing_Com()
+        public virtual void CheckPageTitles_HttpWww_Bing_Com()
         {
-            this.GoToPage("\"http://www.bing.com/\"", "\"Bing\"", ((string[])(null)));
+            this.CheckPageTitles("\"http://www.bing.com/\"", "\"Bing\"", ((string[])(null)));
 #line hidden
         }
     }

@@ -1,8 +1,8 @@
-﻿Feature: GoToPage
+﻿Feature: Page Titles Tests
 I go to Page
 I check for site title to match the expected one
 
-Scenario Outline: GoToPage
+Scenario Outline: Check Page Titles
 Given Navigate to <pageURL> 
 Then Check for <pageTitle>
 
