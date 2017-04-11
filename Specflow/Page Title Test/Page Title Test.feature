@@ -2,7 +2,7 @@
 I go to Page
 I check for site title to match the expected one
 
-Scenario Outline: Check Page Titles
+Scenario Outline: Check Page Title
 Given Navigate to <pageURL> 
 Then Check for <pageTitle>
 

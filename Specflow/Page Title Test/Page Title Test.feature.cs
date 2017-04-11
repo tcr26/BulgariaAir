@@ -67,9 +67,9 @@ namespace Specflow.PageTitleTest
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void CheckPageTitles(string pageURL, string pageTitle, string[] exampleTags)
+        public virtual void CheckPageTitle(string pageURL, string pageTitle, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Page Titles", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Page Title", exampleTags);
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -81,38 +81,38 @@ testRunner.Then(string.Format("Check for {0}", pageTitle), ((string)(null)), ((T
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Titles: \"https://www.abv.bg/\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Title: \"https://www.abv.bg/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Page Titles Tests")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"https://www.abv.bg/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageURL", "\"https://www.abv.bg/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageTitle", "\"АБВ Поща\"")]
-        public virtual void CheckPageTitles_HttpsWww_Abv_Bg()
+        public virtual void CheckPageTitle_HttpsWww_Abv_Bg()
         {
-            this.CheckPageTitles("\"https://www.abv.bg/\"", "\"АБВ Поща\"", ((string[])(null)));
+            this.CheckPageTitle("\"https://www.abv.bg/\"", "\"АБВ Поща\"", ((string[])(null)));
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Titles: \"https://www.google.bg/?gws_rd=ssl\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Title: \"https://www.google.bg/?gws_rd=ssl\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Page Titles Tests")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"https://www.google.bg/?gws_rd=ssl\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageURL", "\"https://www.google.bg/?gws_rd=ssl\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageTitle", "\"Google\"")]
-        public virtual void CheckPageTitles_HttpsWww_Google_BgGws_RdSsl()
+        public virtual void CheckPageTitle_HttpsWww_Google_BgGws_RdSsl()
         {
-            this.CheckPageTitles("\"https://www.google.bg/?gws_rd=ssl\"", "\"Google\"", ((string[])(null)));
+            this.CheckPageTitle("\"https://www.google.bg/?gws_rd=ssl\"", "\"Google\"", ((string[])(null)));
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Titles: \"http://www.bing.com/\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check Page Title: \"http://www.bing.com/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Page Titles Tests")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"http://www.bing.com/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageURL", "\"http://www.bing.com/\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:pageTitle", "\"Bing\"")]
-        public virtual void CheckPageTitles_HttpWww_Bing_Com()
+        public virtual void CheckPageTitle_HttpWww_Bing_Com()
         {
-            this.CheckPageTitles("\"http://www.bing.com/\"", "\"Bing\"", ((string[])(null)));
+            this.CheckPageTitle("\"http://www.bing.com/\"", "\"Bing\"", ((string[])(null)));
 #line hidden
         }
     }
