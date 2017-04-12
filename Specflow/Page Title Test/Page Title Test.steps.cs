@@ -17,14 +17,14 @@ namespace Specflow.PageTitleTest
             Waiter = new WebDriverWait(Hooks.Driver, TimeSpan.FromSeconds(20));
         }
 
-        [Given(@"Navigate to ""(.*)""")]
-        public void GivenNavigateTo(string pageUrl)
+        [Given(@"Navigate to ""(.*)"" page")]
+        public void GivenNavigateToPage(string pageUrl)
         {
             Hooks.Driver.Navigate().GoToUrl(pageUrl);
         }
 
-        [Then(@"Check for ""(.*)""")]
-        public void ThenCheckFor(string pageTitle)
+        [Then(@"Check for ""(.*)"" page title")]
+        public void ThenCheckForPageTitle(string pageTitle)
         {
             Assert.AreEqual(pageTitle, Hooks.Driver.Title);
         }

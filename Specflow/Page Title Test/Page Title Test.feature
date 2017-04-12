@@ -3,8 +3,8 @@ I go to Page
 I check for site title to match the expected one
 
 Scenario Outline: Check Page Title
-Given Navigate to <pageURL> 
-Then Check for <pageTitle>
+Given Navigate to <pageURL> page
+Then Check for <pageTitle> page title
 
 Examples: 
 

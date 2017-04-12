@@ -73,9 +73,9 @@ namespace Specflow.PageTitleTest
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
-testRunner.Given(string.Format("Navigate to {0}", pageURL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given(string.Format("Navigate to {0} page", pageURL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
-testRunner.Then(string.Format("Check for {0}", pageTitle), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then(string.Format("Check for {0} page title", pageTitle), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
