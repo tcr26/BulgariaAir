@@ -18,6 +18,7 @@ namespace Specflow
         public static void BeforeTestRun()
         {
             Driver = new FirefoxDriver();
+            Driver.Manage().Window.Maximize();
         }
 
         [AfterScenario]
