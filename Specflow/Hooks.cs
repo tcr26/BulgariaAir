@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
-namespace Specflow
+namespace BulgariaAir
 {
     [Binding]
     public static class Hooks

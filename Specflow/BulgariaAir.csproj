@@ -66,19 +66,19 @@
   <ItemGroup>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Page Title Test\Page Title Test.steps.cs" />
-    <Compile Include="Page Title Test\Page Title Test.feature.cs">
+    <Compile Include="BulgariaAirHomePageTests\BulgariaAir Title Test.steps.cs" />
+    <Compile Include="BulgariaAirHomePageTests\BulgariaAir Title Test.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Page Title Test.feature</DependentUpon>
+      <DependentUpon>BulgariaAir Title Test.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Page Title Test\Page Title Test.feature">
+    <None Include="BulgariaAirHomePageTests\BulgariaAir Title Test.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Page Title Test.feature.cs</LastGenOutput>
+      <LastGenOutput>BulgariaAir Title Test.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup />

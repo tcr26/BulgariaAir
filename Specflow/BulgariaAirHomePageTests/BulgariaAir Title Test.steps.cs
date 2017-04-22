@@ -5,25 +5,25 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Firefox;
 
-namespace Specflow.PageTitleTest
+namespace BulgariaAir.BulgariaAirTitleTest
 {
     [Binding]
-    public class PageTitleTest
+    public class BulgariaAirPageTitleTest
     {
         private static WebDriverWait Waiter { get; set; }
 
-        public PageTitleTest()
+        public BulgariaAirPageTitleTest()
         {
             Waiter = new WebDriverWait(Hooks.Driver, TimeSpan.FromSeconds(20));
         }
 
-        [Given(@"Navigate to ""(.*)"" page url")]
+        [Given(@"I am on the ""(.*)"" page url")]
         public void GivenNavigateToPage(string pageURL)
         {
             Hooks.Driver.Navigate().GoToUrl(pageURL);
         }
 
-        [Then(@"Check for ""(.*)"" page title")]
+        [Then(@"I check for ""(.*)"" page title")]
         public void ThenCheckForPageTitle(string pageTitle)
         {
             Assert.AreEqual(pageTitle, Hooks.Driver.Title);
