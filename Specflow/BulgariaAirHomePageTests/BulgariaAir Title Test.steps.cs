@@ -4,6 +4,7 @@ using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Firefox;
+using BulgariaAir;
 
 namespace BulgariaAir.BulgariaAirTitleTest
 {

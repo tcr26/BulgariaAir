@@ -16,7 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
-    <NuGetPackageImportStamp>2ad57eeb</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>155352fa</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,12 +42,12 @@
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.3.0\lib\net40\WebDriver.dll</HintPath>
+    <Reference Include="WebDriver, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver.Support, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.Support.3.3.0\lib\net40\WebDriver.Support.dll</HintPath>
+    <Reference Include="WebDriver.Support, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.4.0\lib\net40\WebDriver.Support.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -64,6 +64,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BulgariaAirSearchForFlightTests\BulgariaAir Home Page.cs" />
+    <Compile Include="BulgariaAirSearchForFlightTests\BulgariaAirSearchForFlight.steps.cs" />
+    <Compile Include="BulgariaAirSearchForFlightTests\BulgariaAirSearchForFlights.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulgariaAirSearchForFlights.feature</DependentUpon>
+    </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BulgariaAirHomePageTests\BulgariaAir Title Test.steps.cs" />
@@ -75,6 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="BulgariaAirSearchForFlightTests\BulgariaAirSearchForFlights.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BulgariaAirSearchForFlights.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="BulgariaAirHomePageTests\BulgariaAir Title Test.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -108,7 +119,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Selenium.Firefox.WebDriver.0.15.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Firefox.WebDriver.0.15.0\build\Selenium.Firefox.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.15063\build\Selenium.WebDriver.MicrosoftWebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.15063\build\Selenium.WebDriver.MicrosoftWebDriver.targets'))" />
   </Target>
+  <Import Project="..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.15063\build\Selenium.WebDriver.MicrosoftWebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.15063\build\Selenium.WebDriver.MicrosoftWebDriver.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -1,6 +1,9 @@
 ﻿using TechTalk.SpecFlow;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.PageObjects;
+using BulgariaAir.BulgariaAirSearchForFlightTests;
+using OpenQA.Selenium.Edge;
 
 namespace BulgariaAir
 {
@@ -12,6 +15,7 @@ namespace BulgariaAir
         [BeforeScenario]
         public static void BeforeScenario()
         {
+
         }
 
         [BeforeTestRun]
